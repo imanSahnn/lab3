@@ -10,24 +10,18 @@
             background-attachment: fixed;
             font-family: Arial, sans-serif;
         }
-        .name1 {
-        font-size: 16px;
-        margin-top: 10px;
-        color: black; 
-        }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+            gap: 20px; /* Set gap between items */
             justify-content: center;
         }
 
         .image-card {
-            width: 200px;
-            margin: 10px;
             text-align: center;
         }
 
@@ -41,10 +35,12 @@
             margin-top: 10px;
             color: white;
         }
+
         .navigation {
             background-color: #d8c7b7;
             padding: 10px;
         }
+
         .nav-link {
             text-decoration: none;
             color: #000000;
@@ -54,14 +50,14 @@
 </head>
 <body>
     <div class="navigation">
-        <a class="nav-link" href="biodata1.html">Biodata</a>
+        <a class="nav-link" href="index.html">Biodata</a>
         <a class="nav-link" href="hobbies.html">Hobbies</a>
         <a class="nav-link" href="campus.html">Campus Life</a>
     </div>
     <div class="container">
         <div class="image-card">
             <img src="img.jpg" alt="Image 1">
-            <div class="name">Hiking Angsi with Frend</div>
+            <div class="name">Hiking Angsi with Fwend</div>
         </div>
         <div class="image-card">
             <img src="img2.jpg" alt="Image 2">
@@ -77,11 +73,11 @@
         </div>
         <div class="image-card">
             <img src="img5.jpg" alt="Image 5">
-            <div class="name1">Mcd before boikot</div>
+            <div class="name">Mcd before boikot</div>
         </div>
         <div class="image-card">
             <img src="img6.jpg" alt="Image 6">
-            <div class="name1">Hensem half side view</div>
+            <div class="name">Hensem half side view</div>
         </div>
     </div>
 </body>
